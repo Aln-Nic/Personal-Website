@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website | Hometown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header and Navigation -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- EDIT ME: Your Name -->
+            <a href="index.html" class="text-2xl font-bold text-blue-600">Nick Alan</a>
+            <ul class="flex items-center space-x-4 md:space-x-8 text-gray-600">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+                <li><a href="hometown.html" class="nav-link">Hometown</a></li>
+                <li><a href="food.html" class="nav-link">Food</a></li>
+                <li><a href="tourist.html" class="nav-link">Places</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area with Background -->
+    <main class="page-content hometown-background">
+        <div class="background-overlay">
+            <div class="container mx-auto px-6 py-12 flex items-center justify-center min-h-[calc(100vh-80px)]">
+                <div class="text-center max-w-3xl text-white">
+                    <!-- EDIT ME: Hometown Information -->
+                    <h2 class="text-5xl md:text-6xl font-bold mb-2" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">My Hometown</h2>
+                    <p class="text-2xl md:text-3xl text-blue-200 mb-8" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Pematangsiantar, North Sumatera, Indonesia</p>
+                    <div class="bg-black/50 backdrop-blur-sm p-6 md:p-8 rounded-lg">
+                        <p class="leading-relaxed text-lg">
+                            Pematangsiantar is the second largest city in North Sumatra after Medan, known for its cool climate and cultural diversity. The city is also the gateway to Lake Toba and has a unique mode of transportation in the form of classic BSA motorized rickshaws.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

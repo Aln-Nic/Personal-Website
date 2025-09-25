@@ -1,0 +1,52 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #a7d2ef; /* A very light blue background */
+}
+
+/* Style for the active navigation link */
+.nav-link.active {
+    color: #2563eb; /* Blue-600 */
+    font-weight: 700;
+    border-bottom: 2px solid #2563eb;
+}
+
+/* Fade-in animation for page content */
+.page-content {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Background khusus untuk Hometown page */
+.hometown-background {
+    background-image: url("assets/tugu-bsa.jpeg"); /* ganti dengan path gambar kamu */
+    background-size: cover;        /* biar gambar menutupi seluruh area */
+    background-position: center;   /* posisi gambar di tengah */
+    background-repeat: no-repeat;  /* jangan diulang */
+    min-height: 100vh;             /* minimal setinggi layar */
+    position: relative;
+    color: white;
+}
+
+/* Overlay agar teks tetap terbaca */
+.hometown-background .background-overlay {
+    background: rgba(0, 0, 0, 0.4); /* hitam transparan */
+    min-height: 100%;
+}
+
