@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         const linkPath = link.getAttribute('href');
 
-        // Check if it's the homepage or another page
         if (linkPath === currentPagePath || (currentPagePath === '' && linkPath === 'index.html')) {
             link.classList.add('active');
         }
     });
 });
+
 
